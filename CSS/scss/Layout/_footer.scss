@@ -1,0 +1,34 @@
+/*FOOTER*/
+
+footer
+{
+    border: 1px solid black;
+    padding: 15px;
+    background-color: #353535;
+
+    a{
+        text-decoration: none;
+        color: white;
+    }
+
+    .logofooter {
+        width: 100px;
+        border-bottom: 10px;
+        color: white;
+        margin-left: 6px;
+        
+    }
+
+    .contentfooter{
+
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        margin-top: 10px;
+        margin-left: 6px;
+        
+    }
+    i{
+        margin-right: 10px;
+    }
+}

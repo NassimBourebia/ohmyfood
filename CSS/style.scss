@@ -1,0 +1,310 @@
+ 
+ 
+ 
+ 
+  @import "scss/variables";
+  @import "scss/base";
+  @import "scss/Layout/header";
+  @import "scss/Layout/textCity";
+  @import "scss/Layout/explorer";
+  @import "scss/Layout/footer";
+
+
+
+
+
+
+
+.restaurants{
+    
+    margin-top: 40px;
+    background-color: rgba(211, 211, 211, 0.125);
+    height: 1200px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    
+}
+.titlerestaurants{
+
+    margin-right: auto;
+}
+
+
+.fonctionnement button:hover{
+
+    background-color: #f5edff;
+    i {
+      color: $color-primary;
+}
+}
+
+.fonctionnement{
+
+   
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin: 20px 35px;
+        gap: 1rem;
+ 
+
+    & button {
+
+          box-shadow: $basic-boxshadow;
+          border: transparent;
+
+
+
+        &::before {
+            content: counter(steps);
+            counter-increment: steps;
+            color: white;
+            background-color: $color-primary;
+            width: 1.5rem;
+            height:1.5rem;
+            display: grid;
+            place-items: center;
+            border-radius: 50%;
+            position: absolute;
+            left: -1rem;
+            bottom: 10px;
+            
+
+
+        }
+
+        position: relative;
+         background-color: #f6f6f6;
+         border-radius: 1rem;
+         padding: 1rem;
+    }
+    & i {
+
+        margin-right: 20px;
+        margin-left: -30px;
+    }
+
+
+    counter-reset: steps;
+
+    }
+
+
+
+
+    #iconsolo
+{
+    padding: 1rem 1rem 1rem 1.7rem;
+}
+   
+
+    .restaurant__list {
+        display: flex;
+        height: 1000px;
+        width: 100%;
+        gap: 1rem;
+        
+    }
+
+.card {
+   
+    width: 100%;
+    height: 250px;
+    box-shadow: $basic-boxshadow;
+    border-radius: 10px;
+
+
+    & img {
+        width: 100%;
+        height: 175px;
+        border-radius: 10px 10px 0 0;
+        margin: auto;
+        object-fit: cover;
+    }
+    
+    & h3 {
+        margin-bottom: 0px;
+        color: black;
+        margin-left: 10px;
+        
+    }
+    & p {
+
+        margin-top: 0;
+        color: black;
+        margin-left: 10px;
+        
+    }
+   
+    
+}
+.restaurant__list
+{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    max-width: 860px;
+    margin: 0 auto;
+    .new{
+        position: relative;
+    }
+    .new::before{
+    content: "Nouveau";
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-family: "Roboto";
+    font-weight: 700;
+    background-color: #99E2D0;
+    color: #008766;
+    padding: 10px;
+    border-radius: 2px;
+
+    }
+    
+    
+
+    
+
+
+}
+
+.card a {
+
+    display:inline-block;
+    text-decoration:none;
+    width: 100%;
+    height: 250px;
+}
+.card__description
+{
+    height: 55px;
+    position: relative;
+
+    i {
+        position: absolute;
+        font-size: 1.5rem;
+        right: 1rem;
+        color: black;
+        top:10%
+        
+    }
+   
+}
+
+
+
+
+
+
+#fasolid
+{
+    color: transparent;
+    background-image: $gradient-color;
+    background-clip: text;
+    -webkit-background-clip: text;
+    opacity: 0;
+    transition: all 800ms;
+}
+
+
+#fasolid:hover{
+
+      opacity: 1;
+}
+
+#fasolid2
+{
+    color: transparent;
+    background-image: $gradient-color;
+    background-clip: text;
+    -webkit-background-clip: text;
+    opacity: 0;
+    transition: all 200ms;
+}
+
+
+#fasolid2:hover{
+
+      opacity: 1;
+}
+#fasolid3
+{
+    color: transparent;
+    background-image: $gradient-color;
+    background-clip: text;
+    -webkit-background-clip: text;
+    opacity: 0;
+    transition: all 200ms;
+}
+
+
+#fasolid3:hover{
+
+      opacity: 1;
+}
+#fasolid4
+{
+    color: transparent;
+    background-image: $gradient-color;
+    background-clip: text;
+    -webkit-background-clip: text;
+    opacity: 0;
+    transition: all 200ms;
+}
+
+
+#fasolid4:hover{
+
+      opacity: 1;
+}
+
+
+/*Media queries*/
+
+@media (min-width:728px){
+
+ 
+
+    .restaurant__list{
+
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        max-width: 860px;
+        margin: 0 auto;
+           
+    }
+
+    .restaurants{
+        align-items: center;
+        height: 750PX;
+    }
+    .card{
+        width:350px;
+    }
+    .logofooter{
+        display: block;
+        margin-left: auto !important;
+        margin-right: auto;
+    }
+    .contentfooter{
+
+        align-items: center;
+
+    }
+    .fonctionnement{
+
+        max-width: 768px;
+        margin-left: auto;
+        margin-right: auto;
+    
+    }
+    
+}
+
+
+
+
+
