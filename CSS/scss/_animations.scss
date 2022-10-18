@@ -1,0 +1,157 @@
+@keyframes iconrotate {
+
+    0% {
+        transform: rotate(-270deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+
+}
+@keyframes boxMagic {
+    
+    from{ 
+      
+      box-shadow:      
+                   0 0 0 #9356DC,
+                   0 0 0 #FF79DA,
+                   0 0 0 #99E2D0,
+                   0 0 0 #9356DC;
+   
+    }
+    
+    to {     
+         
+      box-shadow:
+      
+                0 -10px 0 #9356DC,
+                -10px 0 0 #FF79DA,
+                  0 10px 0 #99E2D0,
+                 10px 0 0 #9356DC;
+      
+    }
+    
+   
+    
+  }
+  
+  @keyframes spinning {
+    
+    from {
+      
+      transform: rotate(0deg);   
+     
+    }
+    
+    to {
+      
+      transform: rotate(360deg);
+    }
+    
+  }
+  
+  
+
+  @keyframes pulse {
+    0% {
+      transform: scale(0.95);
+      
+    }
+    
+    70% {
+      transform: scale(1);
+      
+    }
+    
+    100% {
+      transform: scale(0.95);
+      
+    }
+  }
+
+  @-webkit-keyframes loaddisp {
+
+    from {
+
+        opacity: 1 ;
+    }
+
+    to {
+
+      opacity: 0;
+      visibility: hidden;
+      
+    }
+
+
+    /*ANIMATION MENU*/
+  }
+
+  .delay-1{
+    animation: iconappear 1.3s;
+    
+}
+.delay-2{
+   animation: iconappear 1.3s;
+   animation-delay: 200ms;
+   
+}
+.delay-3{
+   animation: iconappear 1.3s;
+   animation-delay: 300ms;
+  
+}
+.delay-4{
+  animation: iconappear 1.3s;
+   animation-delay: 400ms;
+
+  
+}
+.delay-5{
+   animation: iconappear 1.3s;
+   animation-delay: 500ms;
+  
+}
+.delay-6{
+  animation: iconappear 1.3s;
+   animation-delay: 600ms;
+  
+}
+.delay-7{
+   animation: iconappear 1.3s;
+   animation-delay: 700ms;
+}
+.delay-8{
+  animation: iconappear 1.3s;
+  animation-delay: 800ms;
+  
+}
+.delay-9{
+   animation: iconappear 1.3s;
+   animation-delay: 900ms;
+   
+}
+
+
+
+
+@keyframes iconappear
+{
+   from{
+       transform: scale(0) ;
+       
+       
+   }
+   to {
+       transform: scale(1);
+   }
+   
+}
+
+
+
+
+
+
+
+  
