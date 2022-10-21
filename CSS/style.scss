@@ -9,6 +9,7 @@
   @import "scss/Layout/explorer";
   @import "scss/Layout/footer";
   @import "scss/animations";
+  @import "scss/media_queries";
 
 
 
@@ -337,7 +338,6 @@ img {
     
     position: relative;
     background-color: #f6f6f6;
-    margin: 0;
     margin-top:-53px;
     border-radius: 1rem 1rem 0 0;
 
@@ -543,52 +543,4 @@ i{
  }
 
 
- @media (min-width:1440px) {
-
-    header{
-        max-width: 1440px;
-        margin: auto;
-    }
-    .img_restaurant {
-        max-width: 1440px;
-        margin: auto;
-    
-    }
-    .menu__list{
-
-        margin: auto;
-        margin-top: -17px;
-        max-width: 1440px;
-
-        h2{
-            text-align: center;
-        }
-
-    }
-    .menu__content{
-
-        margin: auto;
-        max-width: 1440px;
-
-    }
-    .footermenu {
-
-        max-width: 1440px;
-        margin: auto;
-
-    }
-   
- }
- @media (max-width:380px) {
-
-    .circle {
-        width: 248px;
-        height: 248px;
-    }
-
-    .box p {
-
-        left: 21%;
-    }
- }
-
+ 
