@@ -543,5 +543,52 @@ i{
  }
 
 
- 
+ @media (min-width:1440px) {
+
+    header{
+        max-width: 1440px;
+        margin: auto;
+    }
+    .img_restaurant {
+        max-width: 1440px;
+        margin: auto;
+    
+    }
+    .menu__list{
+
+        margin: auto;
+        margin-top: -17px;
+        max-width: 1440px;
+
+        h2{
+            text-align: center;
+        }
+
+    }
+    .menu__content{
+
+        margin: auto;
+        max-width: 1440px;
+
+    }
+    .footermenu {
+
+        max-width: 1440px;
+        margin: auto;
+
+    }
+   
+ }
+ @media (max-width:380px) {
+
+    .circle {
+        width: 248px;
+        height: 248px;
+    }
+
+    .box p {
+
+        left: 21%;
+    }
+ }
 
