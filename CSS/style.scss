@@ -84,7 +84,7 @@
     & i {
 
         margin-right: 20px;
-        margin-left: -30px;
+        margin-left: -20px;
     }
 
 
@@ -292,11 +292,7 @@
         margin-left: auto !important;
         margin-right: auto;
     }
-    .contentfooter{
-
-        align-items: center;
-
-    }
+    
     .fonctionnement{
 
         max-width: 768px;
@@ -306,16 +302,8 @@
     }
 
     /*Media queries pages*/ 
-
-    
-
-
-
     
 }
-
-
-
 
 /*PAGE1 La palette du goût*/
 
@@ -338,6 +326,7 @@ img {
     
     position: relative;
     background-color: #f6f6f6;
+
     margin-top:-53px;
     border-radius: 1rem 1rem 0 0;
 
@@ -532,15 +521,6 @@ i{
         opacity: 1;
     }
 }
- header{
-    i{
-        position: absolute;
-        left: 1rem;
-        top: 22px;
-        font-size: 1.5rem;
-
-    }
- }
 
 
  

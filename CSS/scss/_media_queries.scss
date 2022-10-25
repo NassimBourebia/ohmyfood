@@ -1,42 +1,51 @@
 @media (min-width:1440px) {
 
-    header{
-        max-width: 1440px;
-        margin: auto;
-    }
-    .img_restaurant {
-        max-width: 1440px;
-        margin: auto;
-    
-    }
+  body {
+
+    margin: auto;
+    max-width: 1440px;
+
+  }
     .menu__list{
 
-        margin: auto;
         margin-top: -17px;
-        max-width: 1440px;
+    }
+    footer {
 
+        .contentfooter{
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            height: 100px;
+
+
+        }
+    }
+ }
+ @media (min-width:728px){
+
+    .menu__list {
         h2{
             text-align: center;
         }
 
     }
-    .menu__content{
+    footer {
 
-        margin: auto;
-        max-width: 1440px;
+        .contentfooter{
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            height: 100px;
 
+
+        }
     }
-    .footermenu {
 
-        max-width: 1440px;
-        margin: auto;
 
-    }
-  
-   
  }
-
  
+
  @media (max-width:380px) {
 
     .circle {
@@ -48,6 +57,10 @@
 
         left: 21%;
     }
-  
+    .menu__list {
+
+        margin: auto;
+        max-width: 1440px;
+    }
  }
 

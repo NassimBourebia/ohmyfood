@@ -8,6 +8,9 @@
     }
 
 }
+
+/*Animation Loading page*/
+
 @keyframes boxMagic {
     
     from{ 
@@ -30,9 +33,7 @@
                  10px 0 0 #9356DC;
       
     }
-    
-   
-    
+      
   }
   
   @keyframes spinning {
@@ -50,8 +51,7 @@
     
   }
   
-  
-
+  /*loading page pulse oh my food*/
   @keyframes pulse {
     0% {
       transform: scale(0.95);

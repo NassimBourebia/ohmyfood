@@ -4,7 +4,9 @@
   "description": "ohmyfood",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch style.scss style.css"
+    "sass": "sass --watch style.scss style.css",
+    "build": "postcss style.css -o ./build/style.min.css"
+    
   },
   "repository": {
     "type": "git",
@@ -12,7 +14,13 @@
   },
   "author": "Bourebia Nassim",
   "license": "ISC",
+  "browserlist":"last 4 versions",
   "dependencies": {
+    "autoprefixer": "^10.4.12",
     "sass": "^1.55.0"
+  },
+  "devDependencies": {
+    "postcss": "^8.4.18",
+    "postcss-cli": "^10.0.0"
   }
 }
