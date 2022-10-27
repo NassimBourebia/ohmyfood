@@ -494,7 +494,7 @@ footer i {
 .box {
   position: relative;
   color: #f1f1f1;
-  transition: transform 0.4s cubic-bezier 0.23, 1.83, 0.42, 1.19;
+  
 }
 
 .box p {
