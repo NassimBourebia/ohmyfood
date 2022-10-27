@@ -1,15 +1,53 @@
-@keyframes iconrotate {
 
-    0% {
-        transform: rotate(-270deg);
-    }
-    100% {
-        transform: rotate(0deg);
-    }
+/*Animation Loading page*/
+
+.loader{
+  display: flex;
+justify-content: center;
+align-items:center;
+ height: 100vh;
+ padding-left: 10px;
+ padding-right: 10px;
+
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  background-color: #ffffff;
+  opacity: 0.9;
+  animation-name: loaddisp;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
 
 }
 
-/*Animation Loading page*/
+.box {
+  position:relative;
+  color: #f1f1f1;
+  transition: transform 0.4s cubic-bezier (0.23,1.83,0.42,1.19)
+}
+
+  .box p{
+  position:absolute;
+  top:36%;
+  left:28%;
+  transform: translate(-50%, -50%);
+  font-size:25px;
+  font-family: "Shrikhand", cursive;
+  background:$gradient-color;
+  background-clip:text;
+  -webkit-background-clip:text;
+  color:transparent;
+  animation: pulse 2s infinite;
+  
+}
+
+.circle {
+  width:320px;
+  height:320px;
+  border-radius:50%;
+  animation: 1s linear infinite alternate boxMagic,
+    4s linear infinite spinning;  
+}
 
 @keyframes boxMagic {
     
@@ -26,12 +64,10 @@
     to {     
          
       box-shadow:
-      
                 0 -10px 0 #9356DC,
                 -10px 0 0 #FF79DA,
                   0 10px 0 #99E2D0,
-                 10px 0 0 #9356DC;
-      
+                 10px 0 0 #9356DC;  
     }
       
   }
@@ -39,13 +75,10 @@
   @keyframes spinning {
     
     from {
-      
       transform: rotate(0deg);   
-     
     }
     
     to {
-      
       transform: rotate(360deg);
     }
     
@@ -84,7 +117,7 @@
     }
 
 
-    /*ANIMATION MENU*/
+    /*ANIMATION BOUTON MENU*/
   }
 
   .delay-1{
@@ -133,7 +166,7 @@
 }
 
 
-
+/*ANIMATION VALIDATION MENU*/
 
 @keyframes iconappear
 {
@@ -146,6 +179,17 @@
        transform: scale(1);
    }
    
+}
+
+@keyframes iconrotate {
+
+  0% {
+      transform: rotate(-270deg);
+  }
+  100% {
+      transform: rotate(0deg);
+  }
+
 }
 
 

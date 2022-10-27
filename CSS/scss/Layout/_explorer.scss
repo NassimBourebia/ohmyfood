@@ -1,3 +1,18 @@
+
+
+/*PARIS,BELLEVILLE*/
+
+.text__city{
+
+  display: flex;
+  justify-content:center;
+  gap: 1em;
+  padding: 1em;
+  background-color: rgba(211, 211, 211, 0.412);
+  font-weight: 500;
+}
+
+
 .explorer{
 
     text-align: center;
@@ -29,58 +44,5 @@
   }
  
 }
-.loader{
-    display: flex;
-  justify-content: center;
-  align-items:center;
-   height: 100vh;
-   padding-left: 10px;
-   padding-right: 10px;
-
-    position: fixed;
-    inset: 0;
-    z-index: 1;
-    background-color: #ffffff;
-    opacity: 0.9;
-    animation-name: loaddisp;
-   animation-delay: 3s;
-    animation-fill-mode: forwards;
 
   
-  
-
-}
-
-.box {
-    position:relative;
-    color: #f1f1f1;
-    transition: transform 0.4s cubic-bezier (0.23,1.83,0.42,1.19)
-   
-   
-  }
-  
-    .box p{
-    position:absolute;
-    top:36%;
-    left:28%;
-    transform: translate(-50%, -50%);
-    font-size:25px;
-    font-family: "Shrikhand", cursive;
-    background:$gradient-color;
-    background-clip:text;
-    -webkit-background-clip:text;
-    color:transparent;
-    animation: pulse 2s infinite;
-    
-    
-  }
-  .circle {
-    width:320px;
-    height:320px;
-    border-radius:50%;
-    animation: 1s linear infinite alternate boxMagic,
-      4s linear infinite spinning;
-      
-  }
-  
- 
