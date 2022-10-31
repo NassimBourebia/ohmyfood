@@ -54,11 +54,12 @@ header i {
   font-size: 1.5em;
 }
 .explorer__btn {
-  border: 2px solid;
+  border: none;
   border-radius: 1.5rem;
   padding: 0.75rem 1.5rem;
   background: linear-gradient(to top, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
   color: white;
+  box-shadow: 2px 1px 16px -3px rgb(95, 93, 93);
   font-weight: 500;
   font-size: 1rem;
   transition: transform 200ms;
@@ -66,6 +67,8 @@ header i {
 .explorer button:hover {
   transform: scale(1.02);
   opacity: 0.9;
+  box-shadow: 10px 10px 1px;
+  box-shadow: 2px 1px 16px -3px black;
 }
 
 .restaurants {
@@ -83,6 +86,7 @@ header i {
 
 .fonctionnement button:hover {
   background-color: #f5edff;
+  box-shadow: -2px 5px 16px -4px rgba(8, 8, 8, 0.3)
 }
 .fonctionnement button:hover i {
   color: #9356DC;
@@ -97,7 +101,7 @@ header i {
   counter-reset: steps;
 }
 .fonctionnement button {
-  box-shadow: -2px 5px 16px -4px rgba(0, 0, 0, 0.3);
+  box-shadow: -2px 5px 16px -4px rgba(77, 77, 77, 0.3);
   border: transparent;
   position: relative;
   background-color: #f6f6f6;
@@ -202,64 +206,23 @@ header i {
   position: absolute;
   font-size: 1.5rem;
   right: 1rem;
-  color: black;
   top: 10%;
 }
 
-#fasolid {
+.fasheart{
   color: transparent;
   background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
   background-clip: text;
   -webkit-background-clip: text;
   opacity: 0;
-  transition: all 800ms;
+  transition: all 500ms;
 }
-
-#fasolid:hover {
-  opacity: 1;
-}
-
-#fasolid2 {
-  color: transparent;
-  background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
-  background-clip: text;
-  -webkit-background-clip: text;
-  opacity: 0;
-  transition: all 200ms;
-}
-
-#fasolid2:hover {
-  opacity: 1;
-}
-
-#fasolid3 {
-  color: transparent;
-  background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
-  background-clip: text;
-  -webkit-background-clip: text;
-  opacity: 0;
-  transition: all 200ms;
-}
-
-#fasolid3:hover {
-  opacity: 1;
-}
-
-#fasolid4 {
-  color: transparent;
-  background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
-  background-clip: text;
-  -webkit-background-clip: text;
-  opacity: 0;
-  transition: all 200ms;
-}
-
-#fasolid4:hover {
+.fasheart:hover {
   opacity: 1;
 }
 
 /*Media queries*/
-@media (min-width: 728px) {
+@media (min-width: 800px) {
   .restaurant__list {
     display: flex;
     justify-content: space-evenly;
@@ -407,10 +370,11 @@ img {
   text-overflow: ellipsis;
 }
 .menu__choice .btn_commande {
-  border: 2px solid;
+  border: none;
   border-radius: 1.5rem;
   padding: 0.8rem 1.5rem;
   background: linear-gradient(to top, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
+  box-shadow: -2px 5px 16px -4px rgba(77, 77, 77, 0.3);
   color: white;
   font-weight: 500;
   font-size: 1rem;
@@ -437,7 +401,7 @@ img {
   background-clip: text;
   -webkit-background-clip: text;
   opacity: 0;
-  transition: all 200ms;
+  transition: all 500ms;
 }
 .menu__list .fa-solid:hover {
   opacity: 1;
@@ -453,11 +417,17 @@ footer a {
   text-decoration: none;
   color: white;
 }
-footer .logofooter {
+footer .logofooter  {
   width: 100px;
   border-bottom: 10px;
   color: white;
   margin-left: 6px;
+}
+.logofooter img {
+
+  width: 100px;
+  height: 16px;
+ 
 }
 footer .contentfooter {
   display: flex;
